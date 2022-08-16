@@ -1,0 +1,103 @@
+:root {
+    scroll-behavior: smooth;
+    --primary-theme-color: #20232abf;
+    --secondary-theme-color: #282c34bf;
+    --primary-text-color: #fff;
+    --primary-highlight-color: #61dafb;
+    --secondary-highlight-color: gold;
+  }
+  
+  .body {
+    background-color: var(--primary-theme-color);
+    color: var(--primary-text-color);
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    background-image: url('../../../assets/img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+  
+  .card {
+    box-shadow: 0 0 0.125rem 0.125rem var(--primary-highlight-color);
+    border-radius: 1rem;
+    overflow: hidden;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  
+  .card__header {
+    background-color: var(--primary-theme-color);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .card__img {
+    background-color: var(--primary-theme-color);
+    border-radius: 50%;
+    width: min(100%, 256px);
+    /* max-width: 256px; */
+    height: 256px;
+    object-fit: cover;
+  }
+  
+  .card__body {
+    background-color: var(--secondary-theme-color);
+    padding: 1rem;
+  }
+  
+  .card__title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .card__subtitle {
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .card__text {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+  }
+
+  .card__text::before {
+    content: '♣';
+  }
+
+  .card__text::after{
+    content: '♣';
+  }
+  
+  .card__footer {
+    background-color: var(--primary-theme-color);
+    padding: 1rem;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .menu__link {
+    display: flex;
+    color: var(--primary-text-color);
+    font-size: 1.75rem;
+  }
+
+  .menu__link:hover {
+    transition: scale(1.125);
+  }
